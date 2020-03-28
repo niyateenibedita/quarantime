@@ -1,0 +1,277 @@
+
+
+header{
+    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(../web.jpg);
+    height: 800px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.logo img{
+    float: left;
+    width: 100px;
+    height: auto;
+}
+
+.top{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    
+}
+.top h1{
+    color: white;
+    padding-left: 580px;
+    font-size: 300%;
+    padding-top: 0;
+}
+.top p{
+    color: white;
+    font-weight: bold;
+    font-size: 200%;
+    padding-left: 550px;
+    text-align: center;
+    letter-spacing: 3px;
+    line-height: 1.6;
+}
+.searchbox{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    background-color:darkgray;
+}
+.searchbtn{
+    color: black;
+    float: right;
+    width: 40px;
+    height: 40px;
+    
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchtext{
+    padding: 9px;
+    line-height: 10px;
+    border: none;
+    background: none;
+    outline: none;
+    color: black;
+    float: left;
+    font-size: 16px;
+    transition: 0.3s;
+    width: 240px;
+}
+
+ul#doctor li{
+    padding: 20px 20px;
+    color: white;
+    margin-bottom: 15px;
+    background-color:lightgray;
+    list-style: none;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+}
+.appbutton{
+    padding-top: 10px;
+    text-align: center;
+}
+.btn{
+    border: black solid 1px;
+    
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+}
+
+.btn{
+    text-decoration: none;
+    color: black;
+    background: white;
+    padding: 5px 30px;
+    border: 1px solid white;
+    transition: 0.3s ease;
+}
+.btn:hover{
+    background-color:maroon;
+    color: #000;
+    font-weight: bold;
+}
+#doctor{
+    background-color: lightgray;
+    height: 450px;
+    
+}
+#doctor li h3{
+    font-size: 300%;
+    color: #000;
+}
+#doctor li p{
+    font-size: 200%;
+    color: #000;
+}
+
+.quote{
+    text-align: center;
+    font-weight: bolder;
+    letter-spacing: 3px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 300%;
+}
+.container{
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+    
+}
+button.accordion{
+    width: 100%;
+    background-color: whitesmoke;
+    border: none;
+    outline: none;
+    text-align: left;
+    padding: 15px 20px;
+    font-size: 18px;
+    transition: background-color 0.2s linear;
+}
+
+button.accordion::after{
+    content: '\f13a';
+    font-family: "fontawesome";
+    font-size: 16px;
+    float: right;
+}
+
+button.accordion.is-open::after{
+    content: "\f139";
+}
+
+button.accordion:hover, button.accordion.is-open{
+    background-color: #ddd;
+}
+
+.content{
+    padding: 0 20px;
+    border-left: 1px solid whitesmoke;
+    border-right: 1px solid whitesmoke;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-in-out;
+    font-size: larger;
+    background-color:white;
+    padding-left: 20px;
+}
+.why{
+    
+}
+.why h3{
+    padding-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.why p{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    
+}
+
+.list{
+    border: black solid 2px;
+    border-radius: 8px;
+    width: 30%;
+    float: left;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 33px;
+    border-spacing: 3px 10px;
+    border-collapse: separate;
+    
+}
+.box{
+    padding-bottom: 10px;
+    
+}
+.list h3{
+    color: orange;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.icon{
+    float: left;
+    size: 140px;
+}
+.appbutton{
+    transition: 0.2s;
+}
+
+.bttn{ cursor: pointer;
+    color: blue;
+}
+.bttn:hover{
+    font-weight: bold;
+    
+}
+.heading h1{
+    font-weight: bolder;
+    text-decoration: underline;
+    text-align: center;
+    padding: 40px;
+}
+.doctoricon{
+    
+    float: left;
+}
+
+
+@media(max-width:768px){
+    he
+    .top{
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        
+    }
+    .top h1{
+        color: white;
+        padding-top: 80px;
+        padding-left: 80px;
+        text-align: center;
+    }
+    .top p{
+        color: white;
+        text-align: center;
+        padding-left: 30px;
+    }
+    .searchbox{
+        top: 70%;
+        left: 50%;
+    }
+    
+    .list{
+        border: black solid 2px;
+        border-radius: 10px;
+        width: 80%;
+        float: left;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        margin-left: 15px;
+        margin-right: 5px;
+        padding-left: 33px;
+        border-spacing: 3px 10px;
+        border-collapse: separate;
+    }    
+
+
+    
+
+}
