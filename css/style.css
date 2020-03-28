@@ -16,29 +16,55 @@ header{
 
 .top{
     position: absolute;
-    top: 0%;
-    left: 0%;
-    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 .top h1{
-    color: white;
-    padding-left: 580px;
+    color: black;
     font-size: 300%;
-    padding-top: 0;
 }
 .top p{
-    color: white;
-    font-weight: bold;
+    color: black;
     font-size: 200%;
-    padding-left: 550px;
+}
+.button{
+    position: absolute;
+    top: 55%;
+    left: 36%;
+    transform: translate(-50%,-50%);
+    border: solid black 2px;
+    text-decoration: none;
+}
+
+
+.button a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 150%;
+    width: 100px;
+    margin-top: 5px;
+}
+.button a:hover{
+    font-weight: bolder;
+}
+
+.title{
     text-align: center;
-    letter-spacing: 3px;
-    line-height: 1.6;
+    background-color: lightgray;
+    height: 450px;
+}
+.title h1{
+    padding-top: 40px;
 }
 .searchbox{
     position: absolute;
-    top: 60%;
     left: 50%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
     transform: translate(-50%,-50%);
     height: 40px;
     border-radius: 40px;
@@ -79,7 +105,7 @@ ul#doctor li{
     text-align: center;
     display: flex;
     flex-direction: column;
-    
+    margin-right: 15px;
 }
 .appbutton{
     padding-top: 10px;
@@ -233,7 +259,7 @@ button.accordion:hover, button.accordion.is-open{
 }
 
 
-@media(max-width:768px){
+@media(max-width:800px){
     he
     .top{
         position: absolute;
@@ -270,7 +296,48 @@ button.accordion:hover, button.accordion.is-open{
         border-spacing: 3px 10px;
         border-collapse: separate;
     }    
+    .list h3{
+        text-align: center;
+    }
+    .icon{
+        align-items: center;
+        size: 140px;
+    }
+    .doctoricon p{
+        padding-left: 2px;
+    }
+    .doctoricon h3{
+        padding-left: 0px;
+        text-align: left;
+    }
+    .doctoricon.bttn, .doctoricon a {
+        display: inline inline-block;
+    }
+    #doctor{
+        background-color: lightgray;
+        
 
+    }
+    .top h1{
+        text-align: center;
+        margin-right: 100px;
+        margin-bottom: 200px;
+        color: #000;
+    }
+    .button{
+        text-align: center;
+        top: 70%;
+        left: 40%;
+        margin-bottom: 100px;
+        
+    }
+    .logo img{
+        top: 0;
+        left: 0;
+        float: left;
+        width: 100px;
+        height: auto;
+    }
 
     
 
